@@ -1,0 +1,47 @@
+
+// ====================== 
+// expand - not index page
+// ======================
+.expand { 
+  h1, .job-title {
+    display: inline-block;
+  }
+
+  .job-title {
+    margin-left: 2rem;
+  }
+
+  header:after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: rgba(128, 128, 128, .2);
+    background: linear-gradient(to bottom,  rgba(128, 128, 128, .2) 0%,rgba(255,255,255,1) 100%);
+    display: block;
+  }
+
+  .headers {
+    margin: 0 auto;
+  }
+
+  main > section {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.expand.experience { 
+
+  section.experience {
+    display: block;
+  }
+
+  main section:not(.experience){
+    display: none;
+  }
+}

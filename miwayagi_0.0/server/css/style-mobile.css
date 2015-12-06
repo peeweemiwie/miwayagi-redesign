@@ -1,0 +1,300 @@
+body {
+font-size:62.5%;
+margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.page-wrapper {
+  margin: 0 auto;
+}
+.page-wrapper,
+.page-wrapper > header  {
+  width: 100%;
+}
+.page-wrapper > header {
+  align-items: center;
+  -webkit-align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px dotted rgb(204, 204, 204);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.page-wrapper > header h1 {
+  color: rgb(107, 107, 107);
+  font-family: 'Raleway Dots', cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.page-wrapper > header h1 span {
+  display: inline-block;
+}
+.page-wrapper > header h1 span::first-letter {
+  color: rgb(252, 107, 4);
+}
+.page-wrapper > header ul,
+.page-wrapper > footer ul {
+  list-style: none;
+}
+.page-wrapper > header li,
+.page-wrapper > footer li {
+  display: inline-block;
+}
+.page-wrapper > header nav li,
+.page-wrapper footer nav li {
+  border-radius: .5rem;
+
+  display: inline-block;
+
+  margin-right: 1rem;
+  padding: 1rem;
+
+}
+.page-wrapper > header nav a,
+.page-wrapper footer nav a {
+  color: #FFF;
+  font-family: 'Pompiere', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100%;
+  text-decoration: none;
+}
+.page-wrapper > header nav li:nth-of-type(1),
+.page-wrapper footer nav li:nth-of-type(1) {
+  background-color: rgb(252, 107, 4);
+}
+.page-wrapper > header nav li:nth-of-type(2),
+.page-wrapper footer nav li:nth-of-type(2) {
+  background-color: rgb(252, 183, 4);
+}
+.page-wrapper > header nav li:nth-of-type(3),
+.page-wrapper footer nav li:nth-of-type(3) {
+  background-color: rgb(150, 199, 105);
+}
+main {
+  margin-top: 6rem; /*Extra space for header*/
+}
+main section {
+  min-height: 20rem;
+  overflow: hidden;
+  padding: 0 0 1rem;
+  position: relative;
+}
+
+main section:nth-of-type(1) header {
+  background-color: rgb(252, 107, 4);
+}
+main section:nth-of-type(2) header {
+  background-color: rgb(252, 183, 4);
+}
+main section:nth-of-type(3) header {
+  background-color: rgb(150, 199, 105);
+}
+main section header h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Pompiere', cursive;
+  font-size: 6rem;
+  margin: 0 0 0 1rem;
+  padding: 0;
+}
+main article {
+  padding: 1rem;
+}
+main article a,
+main article p {
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+main article a{
+  text-decoration: none;
+}
+main article h2,
+main article h3{
+  font-family: Arimo, sans-serif;
+  color: #777;
+  margin: 0 0 1rem 0;
+}
+main article h2{
+  font-size: 2.2rem;
+}
+main article .experience > h2{
+  color: #FC6B04;
+}
+main article h3{
+  font-size: 1.8rem;
+}
+/* ========== barchart ========== */
+#chart-skills .v-guide text,
+#chart-skills .h-guide text {
+  color: #AAA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+#chart-skills rect {
+  transition: opacity 200ms;
+}
+#chart-skills rect:hover {
+  opacity: .5;
+}
+#chart-skills text.x.label {
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+/* ========== bubble chart ========== */
+
+#chart-buzzwords {
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+#chart-buzzwords text {
+  font: 10px sans-serif;
+}
+#chart-buzzwords g.node {
+  transition: opacity 200ms;
+}
+#chart-buzzwords g.node:hover {
+  cursor: default;
+  opacity: .5;
+}
+#chart-buzzwords .buzzword {
+  color: #777;
+  font-family: tahoma, Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  width: calc(100% - 400px);
+}
+
+/* ========== barchart && bubble chart ========== */
+#chart-skills,
+#chart-buzzwords {
+  border: 2px solid #CCC;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== experience timeline ========== */
+.experience > div {
+  border: 2px solid #CCC;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+}
+.experience > div p.time.end,
+.experience > div p.time.start {
+  background: #FC6B04;
+  border-radius: .5rem;
+  color: #FFF;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: -2.5rem;
+  padding: 1rem;
+}
+.experience > div p.detail:before {
+  content: "\2022  ";
+  color: #FC6B04;
+}
+.experience > div p.more:before {
+  content: "- ";
+  color: #FC6B04;
+}
+/* ========== bio page ========== */
+.bio .text {
+  padding: 2rem;
+}
+.bio .image {
+  text-align: center;
+}
+.bio img {
+  border: 8px solid rgb(252, 183, 4);
+  border-radius: 50%;
+  width: 90%;
+}
+/* ========== contact page ========== */
+.contact article {
+  display: flex;
+  justify-content: space-around;
+}
+.contact .linkedin,
+.contact .github {
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(150, 199, 105);
+  border-radius: 50%;
+  display: block;
+  font-size: 3rem;
+  height: 25rem;
+  margin: .5rem;
+  text-align: center;
+  padding: 3.5rem;
+  transition: background-color 300ms, color 300ms, opacity 300ms;
+  width: 25rem;
+}
+.contact .linkedin {
+  background-image: url(../img/linkedin.png);
+  background-size: 7rem;
+  background-position: center 16rem;
+}
+.contact .github {
+  background-image: url(../img/octocat.png);
+  background-position: center 16rem;
+  background-size: 10.3rem;
+  line-height: 104%;
+}
+.contact .linkedin:hover,
+.contact .github:hover {
+  background-color: rgba(150, 199, 105, .5);
+  color: #FFF;
+}
+
+/* ========== footer and download ========== */
+
+footer {
+  border-top: 2px solid #CCC;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+}
+footer nav{
+  display: flex;
+  justify-content: flex-end;
+}
+footer nav a {
+  width: 100%;
+  margin: .5rem;
+}
+.download {
+  align-items: center;
+  background-image: url(../img/download-gray.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  background-color: #FC6B04;
+  bottom: 0;
+  color: #FFF;
+  font-family: tahoma, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  opacity: .9;
+  padding: 1rem;
+  position: fixed;
+  text-decoration: none;
+  transition: opacity 300ms;
+  width: 100%;
+  z-index: 10;
+}
+.download:hover {
+  opacity: 1;
+}

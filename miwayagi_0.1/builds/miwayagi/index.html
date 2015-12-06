@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Miwa Yagi</title>
+  <link href='http://fonts.googleapis.com/css?family=Pompiere|Raleway+Dots|Arimo|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</head>
+<body class="">
+<header role="banner">
+  <div class="headers">
+    <h1><img class="logo" src="images/logo.svg" alt="Miwa Yagi logo">Miwa Yagi</h1>
+    <h2 class="job-title">Design Technologist</h2>
+  </div>
+</header>  
+<div class="page-wrapper">
+  <section class="content">
+
+    <nav role="navigation">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main role="main">
+      <section class="experience" id="experience"  ng-controller="MyController">
+        <div  class="container">
+          <div class="section-title">
+            <h3>experience</h3>
+          </div>
+          <h4>Summery:</h4>
+          <p class="skill">
+            <span class="keyword" ng-repeat="frontend in item.frontend">{{ frontend }}</span>
+          </p>
+        </div>
+
+
+          <div class="experience">
+              <div ng-repeat="item in works" class="container">
+                <div class="section-title">
+                  <p class="time end">{{ item.time.end }}</p>
+                  <h4 class="title">{{ item.title }} - <span class="company">{{ item.company }}</span></h4>
+                  <p class="time start">{{ item.time.start }}</p>
+                </div>
+                
+                <ul>
+                  <li class="detail" ng-repeat="detail in item.detail">{{ detail }}</li>
+                  <ul>
+                    <li class="more" ng-repeat="more in item.more">{{ more }}</li>
+                  </ul>
+                </ul>
+                <!-- <p class="detail" ng-repeat="detail in item.detail">{{ detail }}</p> -->
+                <!-- <p class="more" ng-repeat="more in item.more">{{ more }}</p> -->
+              </div>
+              <h2>Education: </h2>
+              <div ng-repeat="item in education">
+                <h3 class="course">{{ item.course }}</h3>
+                <p class="school">{{ item.school }}</p>
+                <p class="subjects">{{ item.subjects }}</p>
+              </div>
+          </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h3>portfolio</h3>
+        <ul>
+          <li><a href="https://github.com/peeweemiwie" class="github" target="_blank">github</a></li>
+          <li><a href="chart.html">Chart</a></li>
+          <li><a href="https://pacific-brook-3080.herokuapp.com/animation">CSS drawing and animation</a></li>
+        </ul>
+        
+      </section>
+
+      <section class="bio" id="bio">
+        <h3>bio</h3>
+        <article>
+          <div class="text">
+            <p>In my personal life, I have many things that I am passionate about.</p>
+
+            <p>First of all, I have been practicing yoga for over a decade. In 2008, I earned a 200 hours Hatha yoga teacher certification from Sivananda Yoga Institute. I currently practice at Integral Yoga Institute.</p>
+
+            <p>I also love cooking and baking, mostly vegan or vegetarian. I have immense love of sharing food I make with my friends. My Oatmeal cookies are irresistible!</p>
+
+            <p>When the weather is nice out, I enjoy hiking, camping and swimming. There is nothing like being surrounded by nature.</p>
+
+            <p>Giving back to our community is another passion of mine. I have contributed to numerous organizations for people with terminal illness and underprivileged children.</p>
+
+            <p>I reside in Roosevelt Island where I find it a very relaxing environment to live.</p>
+
+            <p>I adopted a cat recently. His name is Love who brightens my life.</p>
+          </div>
+          <div class="image">
+            <img src="img/love.jpg" alt="A cat called Love">
+          </div>
+        </article>
+      </section>
+
+      <section class="contact" id="contact">
+        <h3>contact</h3>
+        <a href="https://www.linkedin.com/in/miwayagi" class="linkedin" target="_blank">Please contact me via linkedIn.</a>
+      </section>
+    </main>
+  </section>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> 
+  <script src="js/controllers.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
