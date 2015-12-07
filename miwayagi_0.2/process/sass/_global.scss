@@ -1,0 +1,46 @@
+// ====================== 
+// header
+// ======================
+header[role=banner] {
+  background: rgba(255, 219, 219, .7);
+  display: block;
+  width: 100%;
+  z-index: 50;
+}
+
+.headers { 
+  text-decoration: none;
+}
+
+h1 {
+  color: #333;
+  font-family: 'Raleway Dots', cursive;
+  font-weight: 300;
+  margin: 0;
+}
+
+.job-title {
+  color: #aaa;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+
+// ====================== 
+// main
+// ======================
+
+h3 {
+  border-bottom: 1px solid #808080;
+  color: #808080;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+p {
+  color: gray;
+  font-size: 1.6rem;
+}

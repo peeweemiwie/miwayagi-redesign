@@ -1,0 +1,49 @@
+/* ========== barchart ========== */
+#chart-skills .v-guide text,
+#chart-skills .h-guide text {
+  color: #AAA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+#chart-skills rect {
+  transition: opacity 200ms;
+}
+#chart-skills rect:hover {
+  opacity: .5;
+}
+#chart-skills text.x.label {
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+/* ========== bubble chart ========== */
+
+#chart-buzzwords {
+  align-items: center;
+  display: flex;
+}
+#chart-buzzwords text {
+  font: 10px sans-serif;
+}
+#chart-buzzwords g.node {
+  transition: opacity 200ms;
+}
+#chart-buzzwords g.node:hover {
+  cursor: default;
+  opacity: .5;
+}
+#chart-buzzwords .buzzword {
+  color: #777;
+  font-family: tahoma, Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  width: calc(100% - 400px);
+}
+
+/* ========== barchart && bubble chart ========== */
+#chart-skills,
+#chart-buzzwords {
+  border: 2px solid #EEE;
+  border-radius: .3rem;
+  margin-bottom: 2rem;
+}

@@ -1,10 +1,9 @@
-var myApp = angular.module('myApp', []);
+var portfolio = angular.module('portfolio', []);
 
-myApp.controller('MyController', function MyController($scope) {
-    $scope.skills = [{
-      'frontend': ['HTML5', 'CSS animation', 'SASS', 'Javascript', 'harp.js', 'highcharts', 'greenSock', 'jQuery', 'node.js', 'wordpress', 'git'],
-      'design': ['sketch', 'Edge Animation', 'Photoshop', 'Illustrator', 'Flash']
-    }];
+portfolio.controller('MyController', function MyController($scope) {
+    $scope.frontend = ['HTML5', 'CSS animation', 'SASS', 'Javascript', 'harp.js', 'angular.js', 'd3.js', 'node.js', 'highcharts', 'greenSock', 'jQuery', 'wordpress', 'A/B testing', 'Google Analytics', 'Omniture', 'git', 'agile'];
+    $scope.design = ['Sketch', 'Edge Animation', 'Photoshop', 'Illustrator', 'Flash'];
+    $scope.interest = ['accessibility', 'animation', 'data visualization', 'inclusive design', 'user-centered design'];
     $scope.works = [
     {
         'title': 'Design Technologist',
@@ -47,8 +46,6 @@ myApp.controller('MyController', function MyController($scope) {
             'start': '3/2011',
             'end': '4/2012'
         },
-        
-        
         'detail': [
           'Clients: Standard & Poors, AKA NYC, Manhattan Marketing Ensemble, Tag Worldwide, Exposure New York, Mundocom - Publicis',
           'Email campaigns and microsites for newly released electric appliances.',
@@ -58,7 +55,7 @@ myApp.controller('MyController', function MyController($scope) {
           'Business-­to-­business newsletter templates for Microsoft Outlook, which are easily altered depending on users’ preference in subscription.'
         ]
     }, {
-        'title': 'Web Content Administration',
+        'title': 'HTML Developer',
         'time': {
             'start': '2/2009',
             'end': '2/2011'

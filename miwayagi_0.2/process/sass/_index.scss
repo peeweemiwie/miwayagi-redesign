@@ -1,0 +1,86 @@
+body.index {
+
+  .main-nav li a,
+  main > section {
+    display: inline-block;
+    height: calc(100vh / 2); 
+    padding: 3rem;
+    position: absolute;
+    overflow: hidden;
+    width: calc(100vw / 2);
+  }
+
+  .main-nav li a{
+    align-items: center;
+    border: 5px solid #eee;
+    background-color: rgba(255,255,255,1);
+    color: rgba(150,150,150,1);
+    display: inline-flex;
+    font-size: 3rem;
+    font-weight: 100;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color .3s, color .3s;
+    z-index: 30;
+  }
+
+  .main-nav li:nth-of-type(1) a,
+  main > section:nth-of-type(1) {
+    left: 0;
+    top: 0;
+  }
+
+  .main-nav li:nth-of-type(2) a, 
+  main > section:nth-of-type(2) {
+    left: calc(100vw / 2);
+    top: 0; 
+  }
+
+  .main-nav li:nth-of-type(3) a,
+  main > section:nth-of-type(3) {
+    left: 0;
+    top: calc(100vh / 2); 
+  }
+
+  .main-nav li:nth-of-type(4) a,
+  main > section:nth-of-type(4) {
+    left: calc(100vw / 2);
+    top: calc(100vh / 2); 
+  }
+
+  // ====================== 
+  // header banner
+  // ======================
+
+  header[role=banner] {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .headers { 
+    align-items: center;
+    display: flex;
+    height: 13rem;
+    width: 37rem;
+  }
+
+  .logo {
+    float: left;
+    width: 10rem;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  .job-title {
+    font-size: 4rem;
+  }
+}
+
+
+
+

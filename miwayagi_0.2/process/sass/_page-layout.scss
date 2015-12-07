@@ -1,0 +1,92 @@
+.page-wrapper {
+  margin: 0;
+  background-color: #fff;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-bottom: 5rem;
+}
+
+.container ul {
+  margin: 0;
+}
+
+.container p,
+.container li {
+  color: gray;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.keyword-wrapper {
+  margin: 0 0 3rem;
+}
+
+.keyword {
+  background: #808080;
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  padding: .5rem 1rem;
+  margin: .3rem;
+}
+
+.section-title {
+  background-color: gray;
+  border-radius: 20px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.section-title h4 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin: 0 1rem;
+}
+
+.section-title h4 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title .time,
+.section-title h4 {
+  display: inline-block;
+}
+
+.section-title .time {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 0;
+  padding: .5rem;
+}
+
+.col {
+  display: inline-block;
+  float: left;
+  margin: 0 1%;
+  width: 48%;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem;
+}
+
+
+// ====================== 
+// experience
+// ======================
+
+.experience {
+  
+}
