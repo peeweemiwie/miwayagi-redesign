@@ -76,5 +76,22 @@ portfolio.controller('MyController', function MyController($scope) {
         'course': 'Certificate in Web Digital Design',
         'school': 'Baruch College',
         'subjects': 'Illustrator, Photoshop, InDesign, Dreamweaver, Flash Animation, ActionScript 2, Fireworks,HTML, CSS, JavaScript'
-    }]
+    }];
+    $scope.portfolio = [
+      {'url': 'p-lg_ill2.jpg', 'text': 'Illustrator'},
+      {'url': 'p-lg_ill3.jpg', 'text': 'Illustrator'},
+      {'url': 'p-lg_flash2.jpg', 'text': 'Flash animation start button - Flash'},
+      {'url': 'p-lg_flash1.jpg', 'text': 'Flash animation start button - Flash'},
+      {'url': 'p-lg_web2.jpg', 'text': 'Mockup for my client\'s website - Photoshop'},
+      {'url': 'p-lg_email2.jpg', 'text': 'Mockup for an email campaign for my client - Photoshop'},
+      {'url': 'p-lg_email1.jpg', 'text': 'Mockup for an email campaign for my client - Photoshop'}, 
+      {'url': 'p-lg_web1.jpg', 'text': 'Mockup for my client\'s website - Photoshop'}, 
+      {'url': 'p-lg_web4.jpg', 'text': 'Mockup for my client\'s website - Photoshop'},
+      {'url': 'p-lg_ill1.jpg', 'text': 'Illustrator'},
+      {'url': 'p-fortune.jpg', 'text': 'Shameless self promotion! - Photoshop'},
+      {'url': 'p-fortune2.jpg', 'text': 'Shameless self promotion! - Photoshop'},
+      {'url': 'p-icons.svg', 'text': 'Icons from my previous portfolio site - Sketch'}
+    ];
+
+    $scope.fonts = ['noto', 'poppins', 'imprima', 'orienta', 'hind', 'roboto', 'arial', 'helvetica-neue'];
 });

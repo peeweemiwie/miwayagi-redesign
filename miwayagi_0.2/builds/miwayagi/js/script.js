@@ -1,43 +1,49 @@
-// var d = document;
-// var box = d.querySelectorAll(".box");
-// var jobTitle = d.querySelectorAll(".job-title");
-// var firstLetter = d.querySelectorAll(".first-letter");
+(function(){
+  var d = document;
+  // contact page bubbles
+  function bubble(){
+    var bubbleWrapper = document.querySelector('.bubble-wrapper');
+    var randomNumber;
+    var i = 0;
+    var span;
+    
 
-// TweenMax.to('body', 3, {
-//   backgroundColor: 'rgba(251, 127, 127, 0.1)'
-// })
+    for (; i < 50; i++) {
+      span = d.createElement('span');
+      randomNumber = (Math.floor(Math.random() * 100));
+      span.classList.add('bubble');
+      span.style.height = randomNumber + "px";
+      span.style.width = randomNumber + "px";
+      var contact = d.createTextNode('contact');
+      span.appendChild(contact);
+      bubbleWrapper.appendChild(span);
+    }
+  }
+  bubble();
 
-// TweenMax.staggerFrom(box, 1, {
-//   opacity:0, 
-//   //y:200, 
-//   x: 1000,
-//   rotation:360, 
-//   scale:2, 
-//   delay: 0.5,
-//   ease: Power4.easeOut
-// }, 0.2);
+  // display navigation menu
+  d.querySelector('.menu').addEventListener('click', function(){
+    this.nextElementSibling.classList.toggle('flex');
+  });
+  var mainNavList = d.querySelector('.main-nav-list');
+  var navLink = mainNavList.querySelectorAll('a');
+  var body = d.querySelector('body');
+  [].forEach.call(navLink, function(el){
+    el.addEventListener('click', function(){
+      var dataLink = this.getAttribute('data-link');
+      body.className = '';
+      body.classList.add(dataLink);
+      body.className += " expand";
+      mainNavList.classList.remove('flex');
+    });
+  });
+  //headers
+  d.querySelector('.headers').addEventListener('click', function(){
+    body.className = '';
+    body.classList.add('index');
+  });
 
-// TweenMax.staggerTo(box, 0.1, {
-//   // borderRadius: "100%",
-//   // backgroundColor: '#eee',
-//   color: '#333',
-//   delay: 2
-// }, 0.1);
 
-// TweenMax.from(jobTitle, 1, {
-//   y: 50,
-//   opacity: 0,
-//   delay: 2.5,
-//   textShadow: "1px 1px 0 rgba(251, 2, 2, 0)",
-//   ease: Power4.easeOut
-// })
+})();
 
-// TweenMax.to(jobTitle, 2, {
-//   textShadow: "1px 1px 0 rgba(251, 2, 2, 0.5)",
-//   delay: 3,
-// })
 
-// TweenMax.to(firstLetter, 1, {
-//   color: '#FF5B5B',
-//   delay: 3
-// })

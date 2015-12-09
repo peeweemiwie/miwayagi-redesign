@@ -2,45 +2,109 @@
 // header
 // ======================
 header[role=banner] {
-  background: rgba(255, 219, 219, .7);
+  background: $header-bg;
+  border-bottom: 1px solid $aqua;
   display: block;
+  position: fixed;
   width: 100%;
   z-index: 50;
 }
 
 .headers { 
   text-decoration: none;
+  perspective: 50rem;
+}
+
+.logo {
+  transition: transform .5s ease;
+}
+
+.headers:focus .logo,
+.headers:hover .logo {
+  transform: rotateY(360deg);
+}
+
+.headers:focus h1,
+.headers:hover h1 {
+  color: $red;
+  transition: color .3s;
 }
 
 h1 {
-  color: #333;
-  font-family: 'Raleway Dots', cursive;
+  color: $text;
+  // font-family: 'Raleway Dots', cursive;
+  font-family: 'Hind Vadodara', sans-serif;
   font-weight: 300;
   margin: 0;
+  transition: color .3s;
 }
 
 .job-title {
-  color: #aaa;
+  color: #555;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 100;
-  margin: 0;
+  margin: -2rem 0 0 0;
 }
 
-
-// ====================== 
-// main
-// ======================
-
 h3 {
-  border-bottom: 1px solid #808080;
-  color: #808080;
+  // border-bottom: 2px solid $red;
+  border-bottom: 2px solid $aqua;
+  color: $gray-80;
   font-size: 4rem;
   font-weight: 100;
   margin: 0 0 2rem 0;
   text-align: center;
 }
 
+h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem;
+}
+
+
 p {
-  color: gray;
+  color: $text;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
 }
+
+p a {
+  color: inherit;
+  transition: color .3s;
+}
+
+p a:focus,
+p a:hover {
+  color: $aqua;
+  outline: none;
+  transition: color .3s;
+}
+
+.show {
+  display: block !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+ul {
+  list-style: none;
+}
+
+li { 
+  padding-left: 0;
+  text-indent: -.2rem;
+}
+
+li:before {
+  color: $aqua;
+  content: "\2022";
+  font-size: 2rem;
+  margin-left: -1rem;
+  margin-right: 0.6rem;
+  position: relative;
+  top: 2px;
+}
+

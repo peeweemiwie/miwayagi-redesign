@@ -19,10 +19,10 @@ bardata.sort(function compareNumbers(a,b) {
     return b - a;
 });
 
-var margin = {top: 30, right: 30, bottom: 40, left: 70}
+var margin = {top: 30, right: 30, bottom: 40, left: 100}
 
 var initialHeight = 300,
-    initialWidth = 600,
+    initialWidth = 500,
     height = initialHeight - margin.top - margin.bottom,
     width = initialWidth - margin.left - margin.right,
     barOffset = 5,

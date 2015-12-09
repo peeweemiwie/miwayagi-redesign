@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en" ng-app="portfolio">
+<html lang="en" ng-app="portfolio" ng-controller="MyController">
 <head>
   <meta charset="UTF-8">
   <title>Miwa Yagi</title>
-  <link href='http://fonts.googleapis.com/css?family=Pompiere|Raleway+Dots|Arimo|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </head>
-<body class="expand portfolio">
-<!-- <body class="index"> -->
+<!-- <body class="expand contact"> -->
+<body class="index">
 <header role="banner">
   <a href="#" class="headers">
     <img class="logo" src="images/logo.svg" alt="Miwa Yagi logo">
@@ -26,26 +26,31 @@
   <section class="content">
 
     <nav role="navigation" class="main-nav">
-      <ul>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <button class="menu" title="Navigation links"><i class="fa fa-list-ul"></i></button>
+      
+      <ul class="main-nav-list">
+        <li><a href="#experience" data-link="experience">Experience</a></li>
+        <li><a href="#portfolio" data-link="portfolio">Portfolio</a></li>
+        <li><a href="#bio" data-link="bio">Bio</a></li>
+        <li><a href="#contact" data-link="contact">Contact</a></li>
       </ul>
     </nav>
 
     <main role="main">
-
-      <section class="page experience" id="experience"  ng-controller="MyController">
+ 
+<!-- ======================
+experience page 
+====================== -->     
+      <section class="page experience" id="experience">
         
           <div class="col">
-            <h3><i class="fa fa-briefcase"></i> experience</h3>
+            <h3><i class="fa fa-briefcase"></i> Experience</h3>
 
-            <div ng-repeat="item in works" class="container">
+            <div ng-repeat="item in works" class="container work">
               <div class="section-title">
-                <p class="time end">{{ item.time.end }}</p>
+                <p class="bubble end">{{ item.time.end }}</p>
                 <h4 class="title">{{ item.title }} - <span class="company">{{ item.company }}</span></h4>
-                <p class="time start">{{ item.time.start }}</p>
+                <p class="bubble start">{{ item.time.start }}</p>
               </div>
               
               <ul>
@@ -54,14 +59,12 @@
                   <li class="more" ng-repeat="more in item.more">{{ more }}</li>
                 </ul>
               </ul>
-              <!-- <p class="detail" ng-repeat="detail in item.detail">{{ detail }}</p> -->
-              <!-- <p class="more" ng-repeat="more in item.more">{{ more }}</p> -->
             </div>
           </div>
 
           <div class="col">
 
-            <h3><i class="fa fa-list-alt"></i> summery</h3>
+            <h3><i class="fa fa-list-alt"></i> Summery</h3>
             <h4>front-end:</h4>
             <p class="keyword-wrapper">
               <span class="keyword" ng-repeat="item in frontend">{{ item }}</span>
@@ -77,78 +80,130 @@
               <span class="keyword" ng-repeat="item in interest">{{ item }}</span>
             </p>
 
-            <h3><i class="fa fa-graduation-cap"></i> education</h3>
+            <h3><i class="fa fa-graduation-cap"></i> Education</h3>
             <div ng-repeat="item in education" class="container">
               <h4>{{ item.course }} - {{ item.school }}</h4>
               <p>{{ item.subjects }}</p>
             </div>
 
-            <div class="section-title">
-              <p class="time"><i class="fa fa-download"></i></p>
-              <h4><a href="#">Download Resume</a></h4>
-              <p class="time"><i class="fa fa-download"></i></p>
+            <h3><i class="fa fa-language"></i> Language</h3>
+            <div class="container">
+              <p>Fluent in English and Japanese.</p>
+              <p lang="js">日本語と英語が流暢に話せます。</p>
             </div>
+
+            <h3><i class="fa fa-file-text"></i> Resume</h3>
+            <p><a href="#">Download Resume </a> <i class="fa fa-download"></i></p>
+            
+<!--             <div class="section-title">
+              <p class="bubble icon"><i class="fa fa-download"></i></p>
+              <h4><a href="#">Download Resume</a></h4>
+              <p class="bubble icon"><i class="fa fa-download"></i></p>
+            </div> -->
           </div>        
       </section>
 
-      <section class="page portfolio" id="portfolio">
-<!--         <ul>
+<!-- ======================
+portfolio page 
+====================== -->
 
-          <li><a href="chart.html">Chart</a></li>
-          <li><a href="https://pacific-brook-3080.herokuapp.com/animation">CSS drawing and animation</a></li>
-        </ul> -->
-
+      <section class="page portfolio" id="portfolio">     
+        <!-- <li><a href="https://pacific-brook-3080.herokuapp.com/animation">CSS drawing and animation</a></li>-->
         <div class="col">
-          <h3><i class="fa fa-code"></i> portfolio - development</h3>
+          <h3><i class="fa fa-code"></i> Portfolio - Front End</h3>
+
           <div class="section-title">
-            <h4><i class="fa fa-github"></i> github</h4>
+            <h4>
+              <span class="bubble icon start"><i class="fa fa-github"></i></span> github and codepen
+              <span class="bubble icon end"><i class="fa fa-codepen"></i></span>
+            </h4>
           </div>
-          <p>Here is a <a href="https://github.com/peeweemiwie" class="github" target="_blank">link</a> to my <i class="fa fa-github"></i> github account.</p>
+
+          <p><a href="https://github.com/peeweemiwie" class="github" target="_blank"><img src="images/p-octocat.png" alt="" class="link-icon">github</a></p>
+
+          <p><a href="http://codepen.io/peeweemiwie/pens/public/" class="codepen" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" alt="" class="link-icon">codepen - CSS drawing and animation</a></p>
+
           <div class="section-title">
-            <h4><i class="fa fa-bar-chart"></i> Charts</h4>
+            <h4><span class="bubble icon"><i class="fa fa-bar-chart"></i></span> Charts</h4>
           </div>
-          <div id="chart-skills"></div>
           <div id="chart-buzzwords"></div>
-          <div class="section-title">
-            <h4><i class="fa fa-pencil"></i> CSS drawing and animation</h4>
-          </div>
-          <p data-height="230" data-theme-id="19622" data-slug-hash="pjKbZK" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/pjKbZK/'>CSS-animation bubbles</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+          <div id="chart-skills"></div>
+          
+
 
         </div>   
         <div class="col">
-          <h3><i class="fa fa-paint-brush"></i> portfolio - design</h3>
-        </div>      
+          <h3><i class="fa fa-paint-brush"></i> Portfolio - Design</h3> 
+
+          <p>They are slighly outdated as I have been focusing on coding rather than designing lately but I think you can get an idea.</p>
+          <p>Hover over for more information.</p>
+            
+          <div class="image-container">
+            <div  ng-repeat="item in portfolio" style="background-image: url(images/{{ item.url }});" tabindex="0" aria-labelledby="aria-{{$index+1}}">
+              <p id="aria-{{$index+1}}">{{ item.text }}</p>
+            </div>
+          </div>
+
+        </div>   
       </section>
+
+<!-- ======================
+bio page 
+====================== -->
 
       <section class="page bio" id="bio">
-        <h3>bio</h3>
-        <article>
-          <div class="text">
-            <p>In my personal life, I have many things that I am passionate about.</p>
+        <div class="col">
+          <h3><i class="fa fa-user"></i> Bio</h3>
+          <p>In my personal life,👹 I have many things that I am passionate about.😀</p>
 
-            <p>First of all, I have been practicing yoga for over a decade. In 2008, I earned a 200 hours Hatha yoga teacher certification from Sivananda Yoga Institute. I currently practice at Integral Yoga Institute.</p>
+          <p>First of all, I have been practicing yoga for over a decade. In 2008, I earned a 200 hours Hatha yoga teacher certification💮 from Sivananda Yoga Institute. I currently practice at Integral Yoga Institute.🙏</p>
 
-            <p>I also love cooking and baking, mostly vegan or vegetarian. I have immense love of sharing food I make with my friends. My Oatmeal cookies are irresistible!</p>
+          <p>I also love cooking🍳 and baking.🍰 I have immense love of sharing food I make with my friends. My Oatmeal cookies🍪 are irresistible!</p>
 
-            <p>When the weather is nice out, I enjoy hiking, camping and swimming. There is nothing like being surrounded by nature.</p>
+          <p>When the weather is nice out,🌞 I enjoy hiking,🚶 camping⛺ and swimming.🏊 There is nothing like being surrounded by nature.🍃</p>
 
-            <p>Giving back to our community is another passion of mine. I have contributed to numerous organizations for people with terminal illness and underprivileged children.</p>
+          <p>Giving back to our community👪 is another passion of mine.👍 I have contributed to numerous organizations for people with terminal illness💐 and underprivileged children.🚸</p>
 
-            <p>I reside in Roosevelt Island where I find it a very relaxing environment to live.</p>
+          <p>I reside in Roosevelt Island NYC 🚠 where I find it a very relaxing environment to live.🏡</p>
 
-            <p>I adopted a cat recently. His name is Love who brightens my life.</p>
+          <p>I adopted a cat😺 recently. His name is Love who brightens my life.🐾</p>
+        </div>
+        
+        <div class="col">
+          <h3><i class="fa fa-camera-retro"></i> Gallery</h3>
+          <div class="photo-frame">
+            <img src="images/b-love.jpg" alt="My cat">
+            <p>Love lounging in his truck.</p>
           </div>
-          <div class="image">
-            <img src="img/love.jpg" alt="My cat who's name is Love">
+          <div class="photo-frame">
+            <img src="images/b-love-bag.jpg" alt="My cat">
+            <p>Shopaholic!</p>
           </div>
-        </article>
+          <div class="photo-frame">
+            <img src="images/b-pomeg.jpg" alt="Carving fruit">
+            <p>I love creating imaginary friends. Here is Mr. Pomeg.</p>
+          </div>
+          <div class="photo-frame">
+            <img src="images/b-clem.jpg" alt="Carving fruit">
+            <p>This is Miss Clemie. She is my avatar on github.</p>
+          </div>
+        </div> 
       </section>
 
+<!-- ======================
+contact page 
+====================== -->
       <section class="page contact" id="contact">
-        <h3>contact</h3>
-        <a href="https://www.linkedin.com/in/miwayagi" class="linkedin" target="_blank">Please contact me via linkedIn.</a>
+        <div class="col">
+          <h3><i class="fa fa-envelope"></i> Contact</h3>
+          <p><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/miwayagi" class="linkedin" target="_blank">Please contact me via linkedIn.</a></p>
+          <p lang="js"><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/miwayagi" class="linkedin" target="_blank"> linkedInからメッセージを送ってください。</a></p>
+        </div>
+        
+        <div class="bubble-wrapper"></div>
+        
       </section>
+      
     </main>
   </section>
 </div>
@@ -157,9 +212,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> 
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="js/barchart.js"></script>
-  <script src="js/bubble.js"></script>
+  <script src="js/buzzwords.js"></script>
   <script src="js/buzzwords.json"></script>
   <script src="js/controllers.js"></script>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
