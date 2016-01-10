@@ -36,7 +36,7 @@
       var dataLink = this.getAttribute('data-link');
       body.className = '';
       body.classList.add(dataLink);
-      body.className += " expand nav-hide";
+      body.className += " nav-hide";
       mainNavList.classList.remove('flex');
     });
   });

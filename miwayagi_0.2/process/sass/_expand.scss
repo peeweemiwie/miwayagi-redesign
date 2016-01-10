@@ -1,12 +1,3 @@
-// ====================== 
-// expand - not index page
-// ======================
-//body.expand { 
-
-// ====================== 
-// header banner
-// ======================
-
   header[role=banner] {
     align-items: center;
     display: flex;
@@ -109,37 +100,3 @@
     content: "";
     display: table;
   }
-//}
-
-// body.expand.experience { 
-//   .page.experience {
-//     display: block;
-//   }
-//   .page:not(.experience){
-//     display: none;
-//   }
-// }
-// body.expand.portfolio { 
-//   .page.portfolio {
-//     display: block;
-//   }
-//   .page:not(.portfolio){
-//     display: none;
-//   }
-// }
-// body.expand.bio { 
-//   .page.bio {
-//     display: block;
-//   }
-//   .page:not(.bio){
-//     display: none;
-//   }
-// }
-// body.expand.contact { 
-//   .page.contact {
-//     display: block;
-//   }
-//   .page:not(.contact){
-//     display: none;
-//   }
-// }
