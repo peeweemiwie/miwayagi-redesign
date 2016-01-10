@@ -12,11 +12,11 @@ portfolio.controller('MyController', function MyController($scope) {
             'end': 'Present'
         },
         'company': 'E*TRADE',
-        
         'detail': [
           'Creating high fidelity prototype as well as production ready responsive website from sketch wireframe using HTML5, CSS3, Javascript in Harp and Angular environment',
           'Testing cross­browser compatibility in Chrome, Firefox, Safari, and IE 8,9,10 and 11',
-          'Prototyping data visualization in highcharts',
+          'Prototyping data visualization in Highcharts',
+          'Redesign styleguide'
         ]
     }, {
         'title': 'Design Technologist',

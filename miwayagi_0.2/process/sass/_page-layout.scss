@@ -141,7 +141,12 @@
 // contact
 // ======================
 
-.contact .col {
+.contact {
+  position: relative;
+  background-color: #ddd;
+}
+
+.contact > .col {
   background: rgba(255,255,255,0.9);
   border-radius: 20px;
   left: 50%;

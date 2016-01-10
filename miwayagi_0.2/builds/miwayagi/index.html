@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en" ng-app="portfolio" ng-controller="MyController">
+<html lang="en" ng-app="portfolio">
 <head>
   <meta charset="UTF-8">
-  <title>Miwa Yagi</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Miwa Yagi 😺 Design Technologist</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </head>
 <!-- <body class="expand contact"> -->
-<body class="index">
+<body
+>
 <header role="banner">
   <a href="#" class="headers">
     <img class="logo" src="images/logo.svg" alt="Miwa Yagi logo">
@@ -36,7 +36,7 @@
       </ul>
     </nav>
 
-    <main role="main">
+    <main role="main" ng-controller="MyController">
  
 <!-- ======================
 experience page 
@@ -93,7 +93,7 @@ experience page
             </div>
 
             <h3><i class="fa fa-file-text"></i> Resume</h3>
-            <p><a href="#">Download Resume </a> <i class="fa fa-download"></i></p>
+            <p><i class="fa fa-download"></i> <a href="#">Download Resume </a></p>
             
 <!--             <div class="section-title">
               <p class="bubble icon"><i class="fa fa-download"></i></p>
@@ -128,6 +128,11 @@ portfolio page
           </div>
           <div id="chart-buzzwords"></div>
           <div id="chart-skills"></div>
+          <h4>Canvas Drawing</h4>
+<!--          <p data-height="369" data-theme-id="19622" data-slug-hash="OyEXGj" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/OyEXGj/'>Canvas drawing</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+         <p data-height="268" data-theme-id="19622" data-slug-hash="YyvWmG" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/YyvWmG/'>CSS-animation dice</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p> -->
+
           
 
 
@@ -162,7 +167,7 @@ bio page
 
           <p>When the weather is nice out,🌞 I enjoy hiking,🚶 camping⛺ and swimming.🏊 There is nothing like being surrounded by nature.🍃</p>
 
-          <p>Giving back to our community👪 is another passion of mine.👍 I have contributed to numerous organizations for people with terminal illness💐 and underprivileged children.🚸</p>
+          <p>Giving back to our community👪 is another passion of mine.👍 I have contributed to numerous organizations for people with cancer💐 and underprivileged children.🚸</p>
 
           <p>I reside in Roosevelt Island NYC 🚠 where I find it a very relaxing environment to live.🏡</p>
 
@@ -200,7 +205,7 @@ contact page
           <p lang="js"><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/miwayagi" class="linkedin" target="_blank"> linkedInからメッセージを送ってください。</a></p>
         </div>
         
-        <div class="bubble-wrapper"></div>
+        <div class="bubble-wrapper" aria-hidden="true"></div>
         
       </section>
       

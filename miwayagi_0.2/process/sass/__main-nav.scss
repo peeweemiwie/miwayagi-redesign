@@ -2,38 +2,38 @@
 //  index main-nav
 // ======================
 
-  .nav-hide .main-nav-list {
+  .expand .main-nav-list {
     display: none;
   }
 
-  .main-nav-list.flex {
+  .expand .main-nav-list.flex {
     position: fixed;
     z-index: 40;
   }
 
-  // .index .page {
-  //   background-color: $white;
-  //   position: fixed;
-  //   overflow: hidden;
-  // }
+  .index .page {
+    background-color: $white;
+    position: fixed;
+    overflow: hidden;
+  }
 
-  //.index .main-nav-list a,
-  .main-nav-list a {    
+  .index .main-nav-list a,
+  .expand .main-nav-list a {    
     position: fixed;
   }
 
-  .main-nav-list a {    
+  .expand .main-nav-list a {    
     background-color: $bg-color-1;
     border: 1px solid rgba($red, .9);
   }
   
-  // .index .main-nav-list a{
-  //   background-color: $bg-color-1;
-  //   border: 1px solid $red; 
-  // }
+  .index .main-nav-list a{
+    background-color: $bg-color-1;
+    border: 1px solid $red; 
+  }
 
-  //.index .main-nav-list a,
-  .main-nav-list a{
+  .index .main-nav-list a,
+  .expand .main-nav-list a{
     align-items: center;
     color: $white;
     display: inline-flex;
@@ -62,11 +62,10 @@
   //   color: rgba($white,0) !important; 
   //   transition: all .3s;
   // }
-
-  // .expand .main-nav-list a:focus,
-  // .expand .main-nav-list a:hover,
-  .main-nav-list a:focus,
-  .main-nav-list a:hover {
+  .expand .main-nav-list a:focus,
+  .expand .main-nav-list a:hover,
+  .index .main-nav-list a:focus,
+  .index .main-nav-list a:hover {
     // background-color: #fff;   
     // color: #202c2d;
     color: $white;
@@ -75,22 +74,26 @@
     transition: all .5s;
   }
 
-  .main-nav-list li:nth-of-type(1) a {
+  .main-nav-list li:nth-of-type(1) a,
+  .index .page.experience {
     left: 0;
     top: 0;
   }
 
-  .main-nav-list li:nth-of-type(2) a{
+  .main-nav-list li:nth-of-type(2) a, 
+  .index .page.portfolio {
     left: calc(100vw / 2);
     top: 0; 
   }
 
-  .main-nav-list li:nth-of-type(3) a{
+  .main-nav-list li:nth-of-type(3) a,
+  .index .page.bio {
     left: 0;
     top: calc(100vh / 2); 
   }
 
-  .main-nav-list li:nth-of-type(4) a {
+  .main-nav-list li:nth-of-type(4) a,
+  .index .page.contact {
     left: calc(100vw / 2);
     top: calc(100vh / 2); 
   }

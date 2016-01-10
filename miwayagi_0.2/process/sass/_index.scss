@@ -1,10 +1,9 @@
+body:not(.expand),
 body.index {
   
   // ====================== 
   // header banner
   // ======================
-/* @keyframes duration | timing-function | delay | 
-   iteration-count | direction | fill-mode | play-state | name */
 
   header[role=banner] {
     display: flex;
@@ -44,22 +43,19 @@ body.index {
 // page and nav
 // ======================  
 
-  .page {
-    display: inline-block;
-    // margin-top: -5rem;
-    overflow: hidden;
-    // transform: scale(0.5);
-    z-index: 1;
-    width: calc(100vw/2);
-  }
+  // .page {
+  //   display: inline-block;
+  //   // margin-top: -5rem;
+  //   overflow: hidden;
+  //   // transform: scale(0.5);
+  //   z-index: 1;
+  //   width: calc(100vw/2);
+  // }
 
-  .page .col {
-    margin: 2rem 10%;
-    width: 80%;
-  }
-
-
-
+  // .page .col {
+  //   margin: 2rem 10%;
+  //   width: 80%;
+  // }
 }
 
 

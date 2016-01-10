@@ -7,6 +7,7 @@
 // animation-fill-mode: none
 // animation-play-state: running
 
+.animate{
 .index header[role=banner] {
   opacity: 0;
   animation: index-banner-bg 1s linear .5s 1 normal forwards;
@@ -32,4 +33,5 @@
   border-color: rgba($red, 0);
   color: rgba($white, 0);
   animation: border-color-fadein 3s linear 2s 1 normal forwards;
+}
 }

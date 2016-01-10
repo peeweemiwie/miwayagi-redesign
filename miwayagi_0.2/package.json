@@ -1,12 +1,12 @@
 {
-  "name": "sassEssentials",
+  "name": "miwayagi",
   "version": "0.0.1",
-  "description": "A website for my Sass Essential Training course on Lynda.com",
+  "description": "miwayagi portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/sassEssentials.git"
+    "url": ""
   },
-  "author": "Ray Villalobos",
+  "author": "Miwa Yagi",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.9.0",

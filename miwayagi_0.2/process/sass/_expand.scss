@@ -1,7 +1,7 @@
 // ====================== 
 // expand - not index page
 // ======================
-body.expand { 
+//body.expand { 
 
 // ====================== 
 // header banner
@@ -83,6 +83,7 @@ body.expand {
   button.menu:focus {
     outline: none;
     transform: rotate(90deg);
+    transition: color .3s;
   }
 
   button.menu:hover i,
@@ -99,41 +100,46 @@ body.expand {
   .page {
     margin: 0 auto 12rem;
     max-width: 1270px;
-    min-height: 100vh;  
+    // min-height: 100vh;  
     padding-top: 12rem; 
     width: 100vw;
   }
-}
+  .page:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+//}
 
-body.expand.experience { 
-  .page.experience {
-    display: block;
-  }
-  .page:not(.experience){
-    display: none;
-  }
-}
-body.expand.portfolio { 
-  .page.portfolio {
-    display: block;
-  }
-  .page:not(.portfolio){
-    display: none;
-  }
-}
-body.expand.bio { 
-  .page.bio {
-    display: block;
-  }
-  .page:not(.bio){
-    display: none;
-  }
-}
-body.expand.contact { 
-  .page.contact {
-    display: block;
-  }
-  .page:not(.contact){
-    display: none;
-  }
-}
+// body.expand.experience { 
+//   .page.experience {
+//     display: block;
+//   }
+//   .page:not(.experience){
+//     display: none;
+//   }
+// }
+// body.expand.portfolio { 
+//   .page.portfolio {
+//     display: block;
+//   }
+//   .page:not(.portfolio){
+//     display: none;
+//   }
+// }
+// body.expand.bio { 
+//   .page.bio {
+//     display: block;
+//   }
+//   .page:not(.bio){
+//     display: none;
+//   }
+// }
+// body.expand.contact { 
+//   .page.contact {
+//     display: block;
+//   }
+//   .page:not(.contact){
+//     display: none;
+//   }
+// }
