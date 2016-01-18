@@ -1,53 +1,53 @@
-  header[role=banner] {
-    align-items: center;
-    display: flex;
-    height: 70px;
-    position: fixed;
-    text-align: center;
-    top: 0;
-  }
+  // header[role=banner] {
+  //   align-items: center;
+  //   display: flex;
+  //   height: 70px;
+  //   position: fixed;
+  //   text-align: center;
+  //   top: 0;
+  // }
 
-  header[role=banner]:after {
-    background: linear-gradient(to bottom, 
-      rgba(200,200,200,1) 0%, 
-      rgba(255,255,255,0) 100%);
-    bottom: -5px;
-    content: "";
-    display: block;
-    height: 5px;
-    position: absolute;
-    width: 100%;
-  }
+  // header[role=banner]:after {
+  //   background: linear-gradient(to bottom, 
+  //     rgba(200,200,200,1) 0%, 
+  //     rgba(255,255,255,0) 100%);
+  //   bottom: -5px;
+  //   content: "";
+  //   display: block;
+  //   height: 5px;
+  //   position: absolute;
+  //   width: 100%;
+  // }
 
-  .headers { 
-    height: auto;
-    margin: 0 auto;
-    text-decoration: none;
-    width: 61rem;
-  }
+  // .headers { 
+  //   height: auto;
+  //   margin: 0 auto;
+  //   text-decoration: none;
+  //   width: 61rem;
+  // }
 
-  .headers div {
-    display: inline-block;
-  }
+  // .headers div {
+  //   display: inline-block;
+  // }
 
-  .headers div > * {
-    display: inline-block;
-    margin-left: 1rem;
-  }
+  // .headers div > * {
+  //   display: inline-block;
+  //   margin-left: 1rem;
+  // }
 
-  .logo {    
-    display: inline-block;
-    margin-bottom: -.6rem;
-    width: 5rem;
-  }
+  // .logo {    
+  //   display: inline-block;
+  //   margin-bottom: -.6rem;
+  //   width: 5rem;
+  // }
 
-  h1 {
-    font-size: 5.5rem;
-  }
+  // h1 {
+  //   font-size: 5.5rem;
+  // }
 
-  .job-title {
-    font-size: 3rem;
-  }
+  // .job-title {
+  //   font-size: 3rem;
+  // }
 
 
 // ====================== 

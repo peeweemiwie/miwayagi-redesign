@@ -25,8 +25,13 @@
   // display navigation menu
   var body = d.querySelector('body');
   d.querySelector('.menu').addEventListener('click', function(){
-    this.nextElementSibling.classList.toggle('flex');
-    body.classList.toggle('nav-hide');
+    if(body.classList.contains('nav-hide')){
+      body.classList.remove('nav-hide');
+      body.classList.add('nav-show');
+    } else if(body.className.indexOf('nav') < 0 || body.classList.contains('nav-show')) {
+      body.classList.remove('nav-show');
+      body.classList.add('nav-hide');
+    }
   });
 
   var mainNavList = d.querySelector('.main-nav-list');
@@ -35,15 +40,13 @@
     el.addEventListener('click', function(){
       var dataLink = this.getAttribute('data-link');
       body.className = '';
-      body.classList.add(dataLink);
-      body.className += " nav-hide";
-      mainNavList.classList.remove('flex');
+      body.classList.add(dataLink, 'nav-hide');
     });
   });
   //headers
   d.querySelector('.headers').addEventListener('click', function(){
     body.className = '';
-    body.classList.add('index');
+    body.classList.add('index', 'nav-show');
   });
 
 

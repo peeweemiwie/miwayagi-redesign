@@ -1,13 +1,64 @@
+  .headers { 
+    height: auto;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 61rem;
+  }
+
+  .headers div {
+    display: inline-block;
+  }
+
+  .headers div > * {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  .logo {    
+    display: inline-block;
+    margin-bottom: -.6rem;
+    width: 5rem;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  .job-title {
+    font-size: 3rem;
+  }
 // ====================== 
 // header
 // ======================
+
 header[role=banner] {
+  align-items: center;
   background: $header-bg;
   border-bottom: 1px solid $aqua;
-  display: block;
+  display: flex;
+  height: $header-height;
   position: fixed;
+  text-align: center;
+  top: 0;
   width: 100%;
   z-index: 50;
+}
+
+.nav-show header[role=banner] {
+  background: rgba($header-bg, 1);
+}
+
+.nav-hide header[role=banner]:after {
+  background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, .3) 0%, 
+    rgba(0, 0, 0, 0) 100%);
+  top: $header-height;
+  content: "";
+  display: block;
+  left: 0;
+  height: 7px;
+  position: fixed;
+  width: 100%;
 }
 
 .headers { 
@@ -93,12 +144,12 @@ ul {
   list-style: none;
 }
 
-li { 
+main li { 
   padding-left: 0;
   text-indent: -.2rem;
 }
 
-li:before {
+main li:before {
   color: $aqua;
   content: "\2022";
   font-size: 2rem;
