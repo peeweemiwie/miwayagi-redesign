@@ -55,32 +55,32 @@
 // ======================
   button.menu {
     background: rgba(0, 0, 0, 0);
-    border: 1px solid #808080;
-    border-radius: 5px;
-    color: #808080;
+    border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
     display: inline-block;
-    font-size: 3rem;
-    height: 5rem;
     left: 1rem;
     position: fixed;
-    top: 1rem;
-    transition: color .3s;
-    width: 5rem;
+    top: 0;
     z-index: 100;
   }
 
   button.menu:hover,
   button.menu:focus {
     outline: none;
-    transform: rotate(90deg);
-    transition: color .3s;
   }
+
+  button.menu i {
+    color: $gray-80;
+    font-size: 5rem;
+    transform: rotate(0);
+    transition: color .3s, transform .3s;
+  }  
 
   button.menu:hover i,
   button.menu:focus i {
     color: $red;
-    transition: color .3s;
+    transform: rotate(90deg);
+    transition: color .3s, transform .3s;
   }
 
 
@@ -92,7 +92,7 @@
     margin: 0 auto 12rem;
     max-width: 1270px;
     // min-height: 100vh;  
-    padding-top: 12rem; 
+    padding-top: 7rem; 
     width: 100vw;
   }
   .page:after {

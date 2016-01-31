@@ -7,31 +7,35 @@
 // animation-fill-mode: none
 // animation-play-state: running
 
-.animate{
-.index header[role=banner] {
-  opacity: 0;
-  animation: index-banner-bg 1s linear .5s 1 normal forwards;
-}
+// .animate{
+//   .index header[role=banner] {
+//     opacity: 0;
+//     animation: index-banner-bg 1s linear .5s 1 normal forwards;
+//   }
 
-.index .headers .logo {
-  opacity: 0;
-  width: .1rem;
-  animation: logo-enlarged .3s linear 1.5s 1 normal forwards;
-}
+//   .index .headers .logo {
+//     opacity: 0;
+//     width: .1rem;
+//     animation: logo-enlarged .3s linear 1.5s 1 normal forwards;
+//   }
 
-.index .headers h1 {
-  opacity: 0;
-  animation: fade-in-slide-up .5s linear 2s 1 normal forwards;
-}
+//   .index .headers h1 {
+//     opacity: 0;
+//     animation: fade-in-slide-up .5s linear 2s 1 normal forwards;
+//   }
 
-.index .headers h2 {
-  opacity: 0;
-  animation: fade-in-slide-up .5s linear 2.3s 1 normal forwards;
-}
+//   .index .headers h2 {
+//     opacity: 0;
+//     animation: fade-in-slide-up .5s linear 2.3s 1 normal forwards;
+//   }
 
-.index .main-nav-list a{
-  border-color: rgba($red, 0);
-  color: rgba($white, 0);
-  animation: border-color-fadein 3s linear 2s 1 normal forwards;
-}
-}
+//   .index .main-nav-list a {
+//     border-color: rgba($red, 0);
+//     color: rgba($white, 0);
+//     animation: border-color-fadein 3s linear 2s 1 normal forwards;
+//   }
+// }
+
+// .nav-show .main-nav-list a {
+//   animation: color-transition 3slinear 2s 1 normal;
+// }

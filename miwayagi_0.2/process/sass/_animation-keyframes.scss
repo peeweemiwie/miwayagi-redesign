@@ -62,3 +62,15 @@
     opacity: 1;
   }
 }
+
+@keyframes color-transition {
+  0% {
+    border-color: rgba($red, .9);
+  }
+  50% {
+    border-color: rgba($red, .2);
+  } 
+  100% {
+    border-color: rgba($red, .9);
+  }  
+}

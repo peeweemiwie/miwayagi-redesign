@@ -102,6 +102,39 @@
   width: 6rem;
 }
 
+.link span {
+  color: $text;
+  display: inline-block;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color .5s;
+  position: relative;
+}
+
+.link:hover span {
+  color: $aqua;
+  transition: color .5s;
+}
+
+.link span:after {
+  border-bottom: 1px solid $aqua;
+  bottom: 0;
+  content: "";
+  display: inline-block; 
+  left: 0;
+  position: absolute; 
+  transition: border-bottom-color .5s, left .5s, width .5s;
+  width: 100%; 
+}
+
+.link:hover span:after {
+  border-bottom-color: $text;
+  left: 50%; 
+  transition: border-bottom-color .5s, left .5s, width .5s;
+  width: 0;
+}
+
+
 // ====================== 
 // bio
 // ======================
@@ -152,7 +185,7 @@
   padding: 4rem;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 70%;
   transform: translate(-50%, -50%);
   z-index: 5;    
 }
