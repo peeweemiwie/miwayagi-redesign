@@ -83,7 +83,6 @@ header[role=banner] {
 
 h1 {
   color: $text;
-  // font-family: 'Raleway Dots', cursive;
   font-family: 'Hind Vadodara', sans-serif;
   font-weight: 300;
   margin: 0;
@@ -105,6 +104,7 @@ h1 {
   border-bottom: 1px solid $aqua;
   color: $white;
   color: transparent;
+  font-family: 'Hind Vadodara', sans-serif;
   font-size: 12rem;
   font-weight: 100;
   text-align: center;

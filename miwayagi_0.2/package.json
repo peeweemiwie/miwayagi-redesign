@@ -6,6 +6,10 @@
     "type": "git",
     "url": ""
   },
+  "engines": {
+    "node": "v4.2.3",
+    "npm": "2.14.7"
+  },
   "author": "Miwa Yagi",
   "devDependencies": {
     "gulp": "^3.8.11",
