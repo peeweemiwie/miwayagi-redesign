@@ -139,6 +139,13 @@
 // bio
 // ======================
 
+.catbeard {
+  border: 3px solid $red;
+  border-radius: 100%;
+  float: left;
+  margin: 0 2rem 2rem 0;
+}
+
 .photo-frame {
   background-color: #fefefe;
   border: 1px solid $gray-ea;
@@ -154,20 +161,28 @@
 }
 
 .photo-frame:after {
-    background: linear-gradient(to bottom, 
-      rgba(2, 2, 2, .3) 0%, 
-      rgba(255, 255, 255, 0) 100%);
-    bottom: -10px;
-    content: "";
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 100%;
-    left: 0;
+  background: linear-gradient(to bottom, 
+    rgba(2, 2, 2, .3) 0%, 
+    rgba(255, 255, 255, 0) 100%);
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
-.photo-frame img {
-  max-width: 100%;
+// .photo-frame img {
+//   max-width: 100%;
+// }
+
+.photo-frame .img-wrapper {
+  background-size: cover;
+  background-position: center center;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 96%;
 }
 
 // ====================== 

@@ -9,11 +9,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- <body class="expand contact"> -->
-<body
->
+<body>
 <header role="banner">
   <a href="#" class="headers">
     <img class="logo" src="images/logo.svg" alt="Miwa Yagi logo">
@@ -99,11 +99,6 @@ experience page
             <h3><i class="material-icons">description</i> Resume</h3>
             <p><i class="material-icons">file_download</i> <a href="#">Download Resume </a></p>
             
-<!--             <div class="section-title">
-              <p class="bubble icon"><i class="fa fa-download"></i></p>
-              <h4><a href="#">Download Resume</a></h4>
-              <p class="bubble icon"><i class="fa fa-download"></i></p>
-            </div> -->
           </div>        
       </section>
 
@@ -112,11 +107,11 @@ portfolio page
 ====================== -->
 
       <section class="page portfolio" id="portfolio">     
-        <!-- <li><a href="https://pacific-brook-3080.herokuapp.com/animation">CSS drawing and animation</a></li>-->
         <h2>Portfolio</h2>
         <div class="col">
           <h3><i class="material-icons">code</i> Front End</h3>
-
+        
+        <div class="container">
           <div class="section-title">
             <h4>
               <span class="bubble icon start"><i class="fa fa-github"></i></span> github and codepen
@@ -124,20 +119,30 @@ portfolio page
             </h4>
           </div>
 
-          <p><a href="https://github.com/peeweemiwie" class="github link" target="_blank"><img src="images/p-octocat.png" alt="github icon" class="link-icon" title="A link to Miwa's github."><span>github</span></a></p>
+          <p><a href="https://github.com/peeweemiwie" class="github link" target="_blank"><img src="images/p-octocat.png" alt="github icon" class="link-icon" title="A link to Miwa's github."  target="_blank"><span>github</span></a></p>
 
-          <p><a href="http://codepen.io/peeweemiwie/pens/public/" class="codepen link" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" alt="codepen icon" class="link-icon" title="A link to Miwa's codepen."><span>codepen - CSS drawing and animation</span></a></p>
-
-          <div class="section-title">
-            <h4><span class="bubble icon"><i class="fa fa-bar-chart"></i></span> Charts</h4>
+          <p><a href="http://codepen.io/peeweemiwie/pens/public/" class="codepen link" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" alt="codepen icon" class="link-icon" title="A link to Miwa's codepen."  target="_blank"><span>codepen - CSS drawing and animation</span></a></p>
+        </div>
+          
+          <div class="container">
+            <div class="section-title">
+              <h4><span class="bubble icon"><i class="fa fa-bar-chart"></i></span> Charts</h4>
+            </div>
+            <div id="chart-buzzwords"></div>
+            <div id="chart-skills"></div>
           </div>
-          <div id="chart-buzzwords"></div>
-          <div id="chart-skills"></div>
-          <h4>Canvas Drawing</h4>
-<!--          <p data-height="369" data-theme-id="19622" data-slug-hash="OyEXGj" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/OyEXGj/'>Canvas drawing</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-         <p data-height="268" data-theme-id="19622" data-slug-hash="YyvWmG" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/YyvWmG/'>CSS-animation dice</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p> -->
+          <div class="container">
+            <div class="section-title">
+              <h4><span class="bubble icon"><i class="material-icons">&#xE051;</i></span> Canvas Drawing</h4>
+            </div>
 
+            <p><a href="http://codepen.io/peeweemiwie/pens/public/" class="codepen link" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" alt="codepen icon" class="link-icon" title="A link to Miwa's codepen."  target="_blank"><span>View more on Codepen</span></a></p>
+
+            <p data-height="369" data-theme-id="19622" data-slug-hash="OyEXGj" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/OyEXGj/'>Canvas drawing</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+            <p data-height="268" data-theme-id="19622" data-slug-hash="YyvWmG" data-default-tab="result" data-user="peeweemiwie" class='codepen'>See the Pen <a href='http://codepen.io/peeweemiwie/pen/YyvWmG/'>CSS-animation dice</a> by Miwa Yagi (<a href='http://codepen.io/peeweemiwie'>@peeweemiwie</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+          </div>
           
 
 
@@ -165,38 +170,48 @@ bio page
         <h2>Bio</h2>
         <div class="col">
           <h3><i class="material-icons">face</i> Who is Miwa?</h3>
-          <p>In my personal life,👹 I have many things that I am passionate about.😀</p>
+          <p><img src="https://lh3.googleusercontent.com/-8F259TtS_ac/AAAAAAAAAAI/AAAAAAAAA3k/_vnucGWVLOI/s120-c/photo.jpg" alt="" class="catbeard">In my personal life, 👹 I have many things that I am passionate about.😀</p>
 
-          <p>First of all, I have been practicing yoga for over a decade. In 2008, I earned a 200 hours Hatha yoga teacher certification💮 from Sivananda Yoga Institute. I currently practice at Integral Yoga Institute.🙏</p>
+          <p>First of all, I have been practicing yoga for over a decade. In 2008, I earned a 200 hours Hatha yoga teacher certification 💮 from Sivananda Yoga Institute. I currently practice at Integral Yoga Institute.🙏</p>
 
-          <p>I also love cooking🍳 and baking.🍰 I have immense love of sharing food I make with my friends. My Oatmeal cookies🍪 are irresistible!</p>
+          <p>I also love cooking 🍳 and baking.🍰 I have immense love of sharing food I make with my friends and coworkers. <a href="#ref1"><sup>[1]</sup></a> My Oatmeal cookies 🍪 are irresistible!</p>
 
-          <p>When the weather is nice out,🌞 I enjoy hiking,🚶 camping⛺ and swimming.🏊 There is nothing like being surrounded by nature.🍃</p>
+          <p>When the weather is nice out, 🌞 I enjoy hiking,🚶 camping ⛺ and swimming. 🏊 There is nothing like being surrounded by nature.🍃</p>
 
-          <p>Giving back to our community👪 is another passion of mine.👍 I have contributed to numerous organizations for people with cancer💐 and underprivileged children.🚸</p>
+          <p>Giving back to our community 👪 is another passion of mine. 👍 I have contributed to numerous organizations for people with cancer 💐 and underprivileged children.🚸</p>
 
           <p>I reside in Roosevelt Island NYC 🚠 where I find it a very relaxing environment to live.🏡</p>
 
-          <p>I adopted a cat😺 recently. His name is Love who brightens my life.🐾</p>
+          <p>I adopted a cat 😺 recently. His name is Love who brightens my life.🐾</p>
+
+          <p id="ref1" class="note">[1] I bring my delicious baked goods 🍩 to work 2-3 times a month.✨</p>
         </div>
         
         <div class="col">
           <h3><i class="material-icons">photo_library</i> Gallery</h3>
           <div class="photo-frame">
-            <img src="images/b-love.jpg" alt="My cat">
+            <div class="img-wrapper" style="background-image: url(images/b-love.jpg)" alt="My cat"></div>
             <p>Love lounging in his truck.</p>
           </div>
           <div class="photo-frame">
-            <img src="images/b-love-bag.jpg" alt="My cat">
+            <div class="img-wrapper" style="background-image: url(images/b-love-bag.jpg)" alt="My cat"></div>
             <p>Shopaholic!</p>
           </div>
           <div class="photo-frame">
-            <img src="images/b-pomeg.jpg" alt="Carving fruit">
+            <div class="img-wrapper" style="background-image: url(images/b-pomeg.jpg)" alt="Carving fruit"></div>
             <p>I love creating imaginary friends. Here is Mr. Pomeg.</p>
           </div>
           <div class="photo-frame">
-            <img src="images/b-clem.jpg" alt="Carving fruit">
+            <div class="img-wrapper" style="background-image: url(images/b-clem.jpg)" alt="Carving fruit"></div>
             <p>This is Miss Clemie. She is my avatar on github.</p>
+          </div>
+          <div class="photo-frame">
+            <div class="img-wrapper" style="background-image: url(images/b-choco-cake.jpg)" alt="Chocolate cake"></div>
+            <p>My friend's birthday cake! 🎂 Nom nom nom...</p>
+          </div>
+          <div class="photo-frame">
+            <div class="img-wrapper" style="background-image: url(images/b-bread.jpg)" alt="Cinnamon raisins walnuts bread"></div>
+            <p>Cinnamon raisins walnut bread. It was so tasty!</p>
           </div>
         </div> 
       </section>

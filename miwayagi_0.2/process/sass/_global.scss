@@ -148,6 +148,15 @@ p a:hover {
   transition: color .3s;
 }
 
+p.note,
+p sup {
+  font-size: 1.2rem;
+}
+
+p.note {
+  text-align: right;
+}
+
 .show {
   display: block !important;
 }
